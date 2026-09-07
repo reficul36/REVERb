@@ -4,6 +4,10 @@
    normalisation (toNorm/fromNorm), so automation and knob taper feel
    identical to the original. */
 
+#ifndef _USE_MATH_DEFINES
+ #define _USE_MATH_DEFINES  // needed for M_PI on MSVC; must precede any header that pulls in <cmath>
+#endif
+
 #include <juce_audio_processors/juce_audio_processors.h>
 #include <cmath>
 #include <algorithm>

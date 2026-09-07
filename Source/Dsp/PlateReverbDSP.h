@@ -12,6 +12,10 @@
    style of Griesinger / EMT 140.
    ===================================================================== */
 
+#ifndef _USE_MATH_DEFINES
+ #define _USE_MATH_DEFINES  // needed for M_PI on MSVC
+#endif
+
 #include <vector>
 #include <cmath>
 #include <cstdint>
